@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+dist-ssr/
+.output/
+build/
+
+# IDE & System
+.DS_Store
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment & local secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# Temporary files & cache
+.tanstack/
+.nitro/
+.wrangler/
+.vinxi/
+.cache/
+.vite/
+.vite-temp/
+__unconfig*
+*.log
+todos.json
+
+# Test & coverage
+coverage/
+playwright-report/
+test-results/
+
