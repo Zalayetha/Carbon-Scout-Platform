@@ -1,0 +1,34 @@
+{
+  "name": "@anvia/agents",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autonomous Carbon Market Intelligence & ESG Compliance Agent (Carbon Scout)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx --env-file=../../.env src/evals/index.ts",
+    "eval:contain": "tsx --env-file=../../.env src/evals/contain.ts",
+    "eval:abstention": "tsx --env-file=../../.env src/evals/abstention.ts",
+    "eval:exact-match": "tsx --env-file=../../.env src/evals/exact-match.ts"
+  },
+  "dependencies": {
+    "@anvia/core": "^1.16.0",
+    "@anvia/lens": "^1.2.4",
+    "@anvia/openai": "^1.3.2",
+    "@anvia/sandbox": "^1.2.1",
+    "@tavily/core": "^0.7.14",
+    "dotenv": "^18.0.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3"
+  }
+}

@@ -27,10 +27,11 @@ We adopt **Playwright** (`@playwright/test`) configured at the monorepo root lev
 ## Consequences
 
 ### Positive
+
 - Ensures full integration between React frontend (`apps/platform`) and Hono backend (`apps/api`).
 - Developers do not need to manually boot server processes prior to running E2E test commands.
 - Multi-browser cross-platform testing capabilities.
 
 ### Negative
-- Initial E2E runs download browser binaries (`Chromium`).
 
+- Initial E2E runs download browser binaries (`Chromium`).

@@ -19,6 +19,7 @@ We adopt a **pnpm workspace** setup with the following layout:
 ## Status Lifecycle
 
 In accordance with our documentation standards, all decision records maintain one of 3 statuses:
+
 1. `accepted` – Active architectural standard (current status of this record).
 2. `superseeded` – Replaced by a subsequent ADR.
 3. `deprecated` – No longer recommended or supported.
@@ -26,10 +27,11 @@ In accordance with our documentation standards, all decision records maintain on
 ## Consequences
 
 ### Positive
+
 - High performant symlinked dependency management via `pnpm`.
 - Type-safe cross-package imports using TypeScript declaration files.
 - Unified root scripts for building and executing parallel dev servers (`pnpm dev`, `pnpm build`).
 
 ### Negative
-- Requires developer alignment on using `pnpm` as the designated package manager.
 
+- Requires developer alignment on using `pnpm` as the designated package manager.

@@ -28,10 +28,11 @@ We adopt **Oxlint**, **Oxfmt**, and **Husky** across the monorepo:
 ## Consequences
 
 ### Positive
+
 - Instant feedback on code quality issues using ultra-fast Oxlint checks.
 - Guarantees that broken code or type errors cannot be committed into Git history.
 - Zero manual setup required for developers after `pnpm install` due to Husky's `prepare` script.
 
 ### Negative
-- Committing code takes a few extra seconds while type checking and building run in pre-commit.
 
+- Committing code takes a few extra seconds while type checking and building run in pre-commit.

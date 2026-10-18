@@ -1,4 +1,4 @@
-export type LogLevel = 'debug' | 'info' | 'warn' | 'error';
+export type LogLevel = "debug" | "info" | "warn" | "error";
 
 export interface LoggerOptions {
   prefix?: string;
@@ -17,8 +17,8 @@ export class Logger {
   private minLevel: LogLevel;
 
   constructor(options: LoggerOptions = {}) {
-    this.prefix = options.prefix ? `[${options.prefix}]` : '[LOG]';
-    this.minLevel = options.minLevel || 'info';
+    this.prefix = options.prefix ? `[${options.prefix}]` : "[LOG]";
+    this.minLevel = options.minLevel || "info";
   }
 
   private shouldLog(level: LogLevel): boolean {
@@ -31,26 +31,26 @@ export class Logger {
   }
 
   debug(message: string, ...args: unknown[]): void {
-    if (this.shouldLog('debug')) {
-      console.debug(this.formatMessage('debug', message), ...args);
+    if (this.shouldLog("debug")) {
+      console.debug(this.formatMessage("debug", message), ...args);
     }
   }
 
   info(message: string, ...args: unknown[]): void {
-    if (this.shouldLog('info')) {
-      console.info(this.formatMessage('info', message), ...args);
+    if (this.shouldLog("info")) {
+      console.info(this.formatMessage("info", message), ...args);
     }
   }
 
   warn(message: string, ...args: unknown[]): void {
-    if (this.shouldLog('warn')) {
-      console.warn(this.formatMessage('warn', message), ...args);
+    if (this.shouldLog("warn")) {
+      console.warn(this.formatMessage("warn", message), ...args);
     }
   }
 
   error(message: string, ...args: unknown[]): void {
-    if (this.shouldLog('error')) {
-      console.error(this.formatMessage('error', message), ...args);
+    if (this.shouldLog("error")) {
+      console.error(this.formatMessage("error", message), ...args);
     }
   }
 }
@@ -60,4 +60,3 @@ export const logger = new Logger();
 export function createLogger(options?: LoggerOptions): Logger {
   return new Logger(options);
 }
-

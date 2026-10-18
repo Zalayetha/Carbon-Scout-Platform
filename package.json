@@ -1,7 +1,7 @@
 {
   "name": "zalsoft-monorepo",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "pnpm monorepo workspace",
   "type": "module",
   "scripts": {
@@ -9,6 +9,14 @@
     "api:dev": "pnpm --filter api run dev",
     "platform:dev": "pnpm --filter platform run dev",
     "logger:build": "pnpm --filter logger run build",
+    "db:generate": "pnpm --filter @anvia/db run db:generate",
+    "db:migrate": "pnpm --filter @anvia/db run db:migrate",
+    "db:push": "pnpm --filter @anvia/db run db:push",
+    "db:studio": "pnpm --filter @anvia/db run db:studio",
+    "eval": "pnpm --filter @anvia/agents run eval",
+    "eval:contain": "pnpm --filter @anvia/agents run eval:contain",
+    "eval:abstention": "pnpm --filter @anvia/agents run eval:abstention",
+    "eval:exact-match": "pnpm --filter @anvia/agents run eval:exact-match",
     "lint": "oxlint .",
     "format": "oxfmt .",
     "typecheck": "pnpm --recursive run typecheck",
@@ -17,14 +25,14 @@
     "test:e2e:ui": "playwright test --ui",
     "prepare": "husky"
   },
-  "packageManager": "pnpm@12.10.1",
   "devDependencies": {
-    "@playwright/test": "^1.64.0",
-    "@types/node": "^26.6.4",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
     "husky": "^9.1.7",
     "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
+    "oxlint": "^1.88.0",
     "tsx": "^4.23.15",
-    "typescript": "^5.7.3"
-  }
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@12.10.1"
 }

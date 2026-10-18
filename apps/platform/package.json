@@ -16,6 +16,10 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@anvia/client": "^1.5.0",
+    "@anvia/core": "^1.16.0",
+    "@anvia/react": "^1.1.4",
+    "@anvia/react-ui": "^1.1.8",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-devtools": "0.10.13",
     "@tanstack/react-router": "1.170.41",
