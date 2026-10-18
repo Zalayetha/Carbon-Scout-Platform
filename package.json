@@ -1,8 +1,8 @@
 {
-  "name": "zalsoft-monorepo",
+  "name": "carbon-scout-platform",
   "version": "1.0.0",
   "private": true,
-  "description": "pnpm monorepo workspace",
+  "description": "Carbon Scout Platform - Autonomous Voluntary Carbon Market Intelligence & ESG Compliance Platform",
   "type": "module",
   "scripts": {
     "dev": "pnpm --parallel --filter api --filter platform run dev",
